@@ -1,0 +1,135 @@
+<div class="sidebarContainer">
+    <div class=" sidebarRow title">
+        Latest passion project
+    </div>
+    <div class="sidebarImage">
+        <img
+        src='../../../assets/sidebar/thumbnail.png'
+        />
+            
+    </div>
+    <div class="titleProject sidebarRow">
+        Using a design system to build a personal finance ecosystem
+    </div>
+    <div class="sidebarRow tagline">
+        Make Keep Grow, Your Money
+    </div>
+
+    <span class="sidebarRow">
+
+         <!--impact-->
+
+    <button 
+    (click)="toggleImpact()"
+    class="blueActive "
+    *ngIf="impactOpen">
+    <span class="buttonLabel">
+       Impact
+
+        <img src="../../../assets/buttons/close.png" alt="" class="buttonIcons">
+
+
+    </span>
+</button>
+
+
+    <button (click)="toggleImpact()"
+    class="greenInActive "
+    *ngIf="impactClosed"> 
+    <span class="buttonLabel">
+        Impact
+ 
+         <img src="../../../assets/buttons/open.png" alt="" class="buttonIcons">
+ 
+ 
+     </span>
+</button>
+
+    <span *ngIf="impactOpen"  class="contentContainer"> 
+
+        <span class="bodyDefaultRegular">
+            I am driven to make an impact, and I have managed to pursue this through the social start-up I started at 19 years old. I started and continue to manage a personal finance fintech that has been featured in Daily Finance UK (2021), listed in the  Mail and Guardian Top 200 South Africans (2021) and a finalist as one of the best student start-ups in the Global Start-up Awards Southern Africa (2018). These are some of the accolades the project I started has garnered for its social impact in developing users' understanding of  financial literacy, whilst also improving the health of their personal finances.
+
+        </span>
+      
+    </span>
+
+
+    <!--experience-->
+
+    <button 
+    (click)="toggleExperience()"
+    class="blueActive "
+    *ngIf="astutExperienceOpen">
+    <span class="buttonLabel">
+      Experience
+ 
+         <img src="../../../assets/buttons/close.png" alt="" class="buttonIcons">
+ 
+ 
+     </span>
+    </button>
+
+    <button 
+    (click)="toggleExperience()"
+    class="greenInActive "
+    *ngIf="astutExperienceClose">
+    <span class="buttonLabel">
+        Experience
+ 
+         <img src="../../../assets/buttons/open.png" alt="" class="buttonIcons">
+ 
+ 
+     </span>
+    </button>
+
+    <span *ngIf="astutExperienceOpen"  class="contentContainer"> 
+
+        <span class="bodyDefaultRegular">
+            With Astute, a new project of  Kukura Capital, I have been able to affirm my design principles and patterns that I have established over the past 6 years. More so I am able to apply them with confidence to easily design  for agile  and scalable development of high quality digital products. Furthermore, this project has allowed me to continue to refine my mobile development competencies as a flutter developer and stay in tune with best practices and updates, such as the new Material Design 3 release.
+        </span>
+      
+        
+    </span>
+
+     <!--tools-->
+
+
+    <button 
+    (click)="toggleTools()"
+    class="blueActive "
+    *ngIf="myStackOpen">
+    <span class="buttonLabel">
+     Tools
+ 
+         <img src="../../../assets/buttons/close.png" alt="" class="buttonIcons">
+ 
+ 
+     </span>
+    </button>
+
+    <button 
+    (click)="toggleTools()"
+    class="greenInActive "
+    *ngIf="myStackClose">
+    <span class="buttonLabel">
+        Tools
+ 
+         <img src="../../../assets/buttons/open.png" alt="" class="buttonIcons">
+ 
+ 
+     </span>
+    </button>
+
+    <span *ngIf="myStackOpen"  class="contentContainer"> 
+        <div class="toolsImage">
+         
+        </div>
+    </span>
+
+
+
+
+</span>
+    
+</div>

@@ -1,0 +1,79 @@
+@use '../../styles/abstract/colors.scss' as colors;
+@use '../../styles/abstract/typefaces.scss' as typeface;
+@use '../../styles/abstract/breakpoints.scss' as space;
+@use '../../styles/abstract/breakpoints.scss' as breakpoint;
+
+.greenInActive{
+width:140px;
+height: 34px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: colors.$green500;
+border: none;
+margin-top: space.$small-space;
+
+}
+
+.buttonLabel{
+    width:122px;
+    display: flex;
+    justify-content: space-between;
+    @include typeface.bodyDefaultBold;
+
+}
+
+.blueActive{
+    width:140px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colors.$blue500;
+    border: none;
+    margin-top: space.$small-space;
+}
+
+.buttonIcons{
+    width:24px;
+    height: 24px;
+}
+
+.tabButtonActive{
+    width: 152px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid colors.$green800;
+    color: colors.$green800;
+    @include typeface.buttonLabel;
+    background-color: colors.$blue500;
+
+}
+
+.tabButtonInActive{
+    width: 152px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid colors.$black;
+    color: colors.$black;
+    @include typeface.buttonLabel;
+    background-color: colors.$netural;
+
+}
+
+.buttonsRow{
+    display:flex ;
+}
+
+@media (max-width: breakpoint.$tablet) {
+    .tabButtonActive{
+       margin-top: breakpoint.$small-space;
+    
+    }
+    
+    .tabButtonInActive{
+        margin-top: breakpoint.$small-space;
+    
+    }
+    
+}

@@ -1,0 +1,15 @@
+@use '../../../styles/abstract/index.scss' as styles;
+
+.footerContainer{
+    color: styles.$black;
+    border-top: 1px styles.$black solid;
+    width: 100%;
+   //margin-top: styles.$extra-large-space;
+    padding-top: styles.$default-space;
+    padding-bottom: styles.$default-space;
+display: flex;
+justify-content: center;
+background-color: styles.$netural;
+
+}
+

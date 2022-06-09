@@ -1,0 +1,93 @@
+@use '../../../styles/abstract/index.scss' as general;
+
+.sidebarContainer{
+    width: 393px;
+     min-height: 1020px;
+    border: 1px solid general.$black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.sidebarRow{
+    width:353px;
+}
+
+.sidebarImage{
+    width:100%;
+    height: 286px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid general.$black;
+    border-bottom:  1px solid general.$black;
+    background-color: general.$white;
+}
+
+.title{
+    @include general.Subheading1;
+   color: general.$lilac500;
+   height: 57px;
+   display: flex;
+   align-items: center;
+}
+
+.titleProject{
+    margin-top: general.$small-space;
+    @include general.Subheading2; 
+}
+
+.tagline{
+
+    @include general.bodyDefaultRegular;
+    color: general.$green800;
+    padding-top: general.$small-space;
+}
+
+.contentContainer{
+    margin-top: general.$small-space;
+    margin-bottom: general.$default-space;
+    display: block;
+}
+
+
+.bodyDefaultRegular{
+    @include general.bodyDefaultRegular;
+    width: 482px;
+    padding-bottom: general.$small-space;
+    text-align: justify
+}
+
+
+
+.toolsImage{
+    width: 288px;
+    height: 30px;
+    background-image: url('../../../assets/tools/wavyTools.png');
+    display: flex;
+    margin-top: general.$default-space;
+}
+
+
+
+@media (max-width:general.$mobile) {
+    .sidebarContainer{
+        width: 300px;   
+    margin-top: general.$default-space;
+    }
+
+        .sidebarRow{
+            width:280px;
+        }
+
+        .toolsImage{
+            width: 185px;
+            height: 73px;
+            background-image: url('../../../assets/tools/wavyTools-m.png');
+          
+            display: block;
+            margin-top: general.$default-space;
+        }
+    
+}

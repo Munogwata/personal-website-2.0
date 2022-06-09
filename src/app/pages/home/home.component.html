@@ -1,0 +1,182 @@
+<div class="page">
+    <div class="page_content">
+        <div class="page_columnleft">
+            <div class="title">
+                Hello there,
+            </div>
+            <div class="subheading">
+                I love to design solutions that drive
+                financial inclusion.
+            </div>
+            <div class="bodyDefaultBold">
+                I am currently working as a Principal Product designer at IQbusiness, where I am consulting on a project
+                for Mauritius Commercial Bank (MCB), the largest and oldest bank in Mauritius. On this project I am the
+                lead product designer responsible for the design of MCB’s new electronic know your client platform.
+            </div>
+
+            <!--expeirence button-->
+            <span class="buttonContainer">
+
+                <button *ngIf='iqExperience' class="greenInActive" (click)="toggleExperience()">
+                    <span class="buttonLabel">
+                        Expeirence
+    
+                        <img src="../../../assets/buttons/open.png" alt="" class="buttonIcons">
+    
+    
+                    </span>
+    
+                </button>
+    
+                <button *ngIf='iqExperienceClosed' (click)="toggleExperience()" class="blueActive">
+                    <span class="buttonLabel">
+                        Expeirence
+    
+                        <img src="../../../assets/buttons/close.png" alt="" class="buttonIcons">
+    
+    
+                    </span>
+                </button>
+                <div *ngIf="iqExperienceClosed" class="contentContainer">
+    
+                    <span class="bodyDefaultRegular">
+                        In designing this project from scratch, I have perfected my capacity to design complicated platforms
+                        that are communicated to the user with simplicity. Furthermore, I have further solidified my skills
+                        in working directly with stakeholders in support of the product owner to showcase the user
+                        experience architecture, software integration and architecture and user flows, as well as advocate
+                        for design decisions that favor the user. In addition, I have contributed to the development and
+                        application of the new design system adopted throughout the designs of the bank.
+                    </span>
+                </div>
+            </span>
+
+
+                     <!--tools button-->
+
+<span class="buttonContainer">
+    <button *ngIf='toolsClose' class="greenInActive" (click)="toggleTools()">
+        <span class="buttonLabel">
+           Tools
+
+            <img src="../../../assets/buttons/open.png" alt="" class="buttonIcons">
+
+
+        </span>
+
+    </button>
+
+    <button *ngIf='toolsOpen' (click)="toggleTools()" class="blueActive">
+        <span class="buttonLabel">
+            Tools
+
+            <img src="../../../assets/buttons/close.png" alt="" class="buttonIcons">
+
+
+        </span>
+    </button>
+    <div *ngIf="toolsOpen" class="toolBox">
+
+
+    </div>
+</span>
+
+                 
+
+
+
+            <div class="subheading">
+                A career committed to sustainable and scalable economic growth.
+            </div>
+
+            <div class="bodyDefaultRegular">
+                My formal introduction to software engineering started in matric when I had to write code for my
+                computer science AS / A-Level (Cambridge) exams.
+                <br />
+   
+
+                Following from this, I continued to up-skill as a designer and developer, in order to utilise these
+                skills to build websites and mobile applications to help start-ups and small businesses leverage the
+                opportunities of the digital economy.
+            </div>
+            <div class="tagline--green">
+                I am a strong advocate of the importance of the role of technology for sustainable economic growth.
+            </div>
+
+            <div class="tagline--lilac">
+                Highlighted below are of some of the works I have published on this topic.
+            </div>
+
+            <!--wef card-->
+            <div class="card">
+                <div class="cardRow">
+                    <img src="../../../assets/homepage-cards/wef-icon.png" alt="" class="cardImage">
+                    <span class="bodyDefaultBold--green">
+                        World Economic Forum
+                    </span>
+
+                </div>
+                <div class="cardRow">
+
+                    <img src="../../../assets/homepage-cards/wef-icon.png" alt="" class="cardImageHidden">
+
+                    <span class="cardLink">
+                        <a class="link" target="_blank"
+                            href="https://www.weforum.org/agenda/2019/08/fourth-industrial-revolution-education/">
+                            To flourish in the 4th industrial revolution, we need to rethink these three things ↗
+                        </a>
+
+                    </span>
+                </div>
+            </div>
+
+
+
+            <!--tedx card-->
+            <div class="card">
+                <div class="cardRow">
+                    <img src="../../../assets/homepage-cards/tedx-icon.png" alt="" class="cardImage">
+                    <span class="bodyDefaultBold--green">
+                        Tedx Talk
+                    </span>
+
+                </div>
+                <div class="cardRow">
+
+                    <img src="../../../assets/homepage-cards/wef-icon.png" alt="" class="cardImageHidden">
+
+                    <span class="cardLink">
+                        <a class="link" target="_blank"
+                            href="https://www.youtube.com/watch?v=zZ6COXfb_W0&t=185s">
+                            Redistributing the global econonmy | Sustainable Finance, Entrepreneurship & digital economy
+                            ↗
+                        </a>
+
+                    </span>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!--the right column-->
+        <div class="page_columnright">
+            <app-sidebar></app-sidebar>
+        </div>
+
+        <!--the tabs-->
+
+   
+
+
+
+    </div>
+
+</div>
+
+
+<div>
+    <app-tabs></app-tabs>
+</div>

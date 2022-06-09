@@ -1,0 +1,270 @@
+
+
+@use '../../../styles/abstract/index.scss' as general;
+.page{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: general.$netural;
+    min-height: 100vh;
+}
+
+.page_content{
+    margin-top: general.$large-space;
+    width: general.$innerDesktop;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_columnleft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    @include general.Heading1;
+    width: 482px;
+    
+}
+
+.subheading{
+    width: 482px;
+    @include general.Subheading1;
+    color: general.$green800;
+    padding-bottom: general.$small-space;
+    padding-top:general.$default-space
+}
+
+.bodyDefaultBold{
+    @include general.bodyDefaultBold;
+    width: 482px;
+    padding-bottom: general.$small-space;
+    text-align: justify
+   
+}
+
+.bodyDefaultBold--green{
+    @include general.bodyDefaultBold;
+    width: 482px;
+    padding-bottom: general.$small-space;
+    color:general.$green800;
+}
+
+.buttonContainer{
+    display:flex;
+    width: 482px;
+    flex-direction: column
+}
+
+.bodyDefaultRegular{
+    @include general.bodyDefaultRegular;
+    width: 482px;
+    padding-bottom: general.$small-space;
+    text-align: justify
+}
+
+.tagline--green{
+    @include general.bodyDefaultBold;
+    color: general.$green800;
+    padding-bottom: general.$small-space;
+    width: 482px;
+
+}
+
+.tagline--lilac{
+    @include general.bodyDefaultBold;
+    color: general.$lilac500;
+    padding-bottom: general.$small-space;
+    width: 482px;
+}
+
+.card{
+    width: 484px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(30, 30, 30, 0.09);
+border-radius: 5px;
+background-color: general.$white;
+flex-direction: column;
+margin-bottom: general.$small-space;
+margin-top: general.$small-space;
+}
+
+.cardRow{
+    width: 455px;
+    display: flex;
+}
+
+.cardImage{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: general.$small-space;
+}
+.cardImageHidden{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: general.$small-space;
+    visibility: hidden;
+}
+
+
+.toolBox{
+    width: 478px;
+    height: 30px;
+    background-image: url('../../../assets/tools/iqBusinessTools-d.png');
+    display: inline;
+    margin-top: general.$default-space;
+}
+
+
+.link{
+    @include general.cardLink;
+    color:general.$green800;
+}
+
+.link:hover{
+    color: general.$lilac500;
+}
+
+.contentContainer{
+    margin-top: general.$small-space;
+    margin-bottom: general.$default-space;
+    display: block;
+}
+
+
+@media (max-width: general.$tablet) {
+
+
+    
+    .page_content{
+        margin-top: general.$large-space;
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+   
+      align-items: center;
+    }
+
+
+    .toolBox{
+        width: 254px;
+        height: 76px;
+        background-image: url('../../../assets/tools/iqBusinessTools-m.png');
+        display: inline;
+        margin-top: general.$default-space;
+    }
+  
+
+
+
+    .page_columnleft{
+    
+        display: flex;
+        flex-direction: column;
+
+      align-items: center;
+    
+ 
+    }
+
+    .page_columnright{
+    
+        display: flex;
+        flex-direction: column;
+    
+ 
+    }
+    .buttonContainer{
+        display:flex;
+        width: 482px;
+        flex-direction: column
+    }
+
+ 
+
+
+}
+
+
+
+@media (max-width: general.$mobile) {
+
+
+    
+    .page_content{
+        margin-top: general.$large-space;
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+   
+      align-items: center;
+    }
+
+
+    .buttonContainer{
+        display:flex;
+        width: 300px;
+        flex-direction: column
+    }
+  
+
+    .page_columnleft{
+     
+        display: flex;
+        flex-direction: column;
+    
+ 
+    }
+
+
+    .title{
+        width: 304px;
+    }
+    .subheading{
+        width: 304px;
+    }
+
+    .bodyDefaultBold{
+        width: 304px;
+    }
+
+    .bodyDefaultRegular{
+        width: 304px;
+    }
+
+   .card{
+       width:300px;
+   }
+
+   .tagline--green{
+    width:304px;
+   }
+
+   .tagline--lilac{
+    width:304px;
+}
+
+.cardRow{
+    width:90% 
+}
+.link{
+    padding-bottom: general.$small-space;
+    padding-top: general.$small-space;
+}
+
+.page_columnright{
+     
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+}

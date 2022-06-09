@@ -1,0 +1,107 @@
+
+@use '../../styles/abstract/colors.scss' as colors;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+$ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+$regular:400;
+$medium:500;
+$bold: 700;
+
+@mixin LogoTextDefault{
+    font-family: $ibm-plex-sans;
+    font-size: 25px;
+    font-weight: $medium;
+}
+
+@mixin Caption{
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: $regular;
+    color: colors.$black;
+}
+
+@mixin Heading1{
+    font-family: $ibm-plex-sans;
+    font-size: 30px;
+    font-weight: $medium;
+    color: colors.$black;
+}
+
+@mixin Subheading1{
+    font-family: $montserrat;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: $bold;
+}
+
+@mixin Subheading2{
+    font-family: $montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: $bold;
+}
+
+
+@mixin bodyDefaultBold{
+    font-family: $montserrat;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: $bold;
+}
+
+@mixin bodyDefaultRegular{
+    font-family: $montserrat;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: $regular;
+}
+
+
+@mixin bodyDefaultSmallBold{
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: $bold;
+}
+
+
+@mixin bodyDefaultSmallBold--List{
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: $bold;
+    margin-bottom: 8px;
+}
+
+@mixin bodyDefaultSmallRegular{
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: $regular;
+}
+
+@mixin cardLink{
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: $regular;
+    text-decoration: underline;
+}
+
+@mixin buttonLabel{
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $regular;
+    letter-spacing: 0.1px;
+
+}

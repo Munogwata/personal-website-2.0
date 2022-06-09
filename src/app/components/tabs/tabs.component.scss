@@ -1,0 +1,423 @@
+@use '../../../styles/abstract/index.scss' as general;
+
+.page{
+    width: 100%;
+   background-color:  general.$netural;
+   display:flex;
+   justify-content: center;
+}
+
+.tabsContainer{
+    margin-top: general.$large-space;
+    width: general.$innerDesktop;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.tabsNavigation{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.subheading{
+    @include general.Subheading1;
+    color: general.$green800;
+    margin-top: general.$small-space;
+    margin-bottom: general.$small-space;
+
+}
+.referenceBox{
+    padding-left: 0px;
+}
+
+.cardsBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabRow{
+     width: 690px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: general.$medium-space;
+    flex-direction: row;
+}
+
+.tabCard{
+    width: 1005px;
+    border-radius: 5px;
+background-color: general.$white;
+height: 616px;
+box-shadow: 0px 1px 3px rgba(30, 30, 30, 0.09);
+display: flex;
+}
+
+.tabCard_Summary{
+    width: 308px;
+    @include general.bodyDefaultRegular;
+    margin-left: general.$medium-space;
+    margin-right: general.$medium-space;
+    margin-top: general.$medium-space;
+    text-align: justify;
+
+}
+
+.tabCard_Content{
+    width: 702px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tabCard_ContentBox{
+    width: 576px;
+    @include general.bodyDefaultRegular;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.tabLine{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    border: 1px solid general.$black;
+    height: 480px;
+
+}
+
+
+.tabImage{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.tabDesignToolsImage{
+    width:506px;
+    height:84px ;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/tabcards/design-tools-d.png');
+    margin-top: general.$default-space;
+}
+
+.tabHighlightedText{
+    margin-top: general.$medium-space;
+    @include general.bodyDefaultRegular;
+    width: fit-content;
+    background-color: general.$blue500;
+    margin-bottom: general.$small-space;
+    text-decoration: underline;
+
+}
+.tabContentRow{
+    display:flex;
+    margin-top: general.$medium-space;
+
+}
+
+.tab_ContentColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentTitle{
+    @include general.bodyDefaultSmallBold;
+    padding-bottom: general.$tiny-space;
+}
+
+.contentSummary{
+    @include general.bodyDefaultSmallRegular;
+    padding-bottom: general.$tiny-space; 
+}
+
+.referenceHeading{
+margin-top: general.$default-space;
+@include general.bodyDefaultSmallBold;
+}
+
+.listRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.referenceList--bullets{
+    list-style:none;
+    padding-left:0;
+    width: 140px;
+    @include general.bodyDefaultSmallRegular;
+}
+
+
+.tabDevToolsImage{
+    width:487px;
+    height:210px ;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/tabcards/dev-tools-d.png');
+    margin-left: 16px;
+margin-right: 16px;
+margin-top: 16px;
+}
+
+.boldList{
+    @include general.bodyDefaultSmallBold--List;
+    padding-left: 0px;
+}
+
+.exampleBox{
+    width: 511px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.exampleBody{
+    margin-top: general.$default-space;
+    @include general.bodyDefaultBold;
+ 
+}
+
+.externalLink{
+    margin-top: general.$small-space;
+    display: flex;
+    @include general.bodyDefaultBold;
+    width: fit-content;
+    background-color: general.$blue500;
+    padding: 4px;
+    color: general.$black;
+}
+
+@media (max-width:general.$tablet) {
+ 
+    .tabsNavigation{
+        display: flex;
+        flex-direction: column;
+        width: 482px;
+    }
+
+    .referenceBox{
+        padding-left: 16px;
+    }
+
+    .tabCard{
+        flex-direction: column;
+        height: auto;
+        width: 482px;
+        margin-bottom: general.$default-space;
+        padding-bottom: general.$default-space;
+
+    }
+
+    .tabDesignToolsImage{
+        width:340px;
+        height:84px ;
+        background-repeat: no-repeat;
+        background-image: url('../../../assets/tabcards/design-tools-tt.png');
+        margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    }
+
+    .tabRow{
+        width: 482px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       margin-bottom: general.$medium-space;
+   }
+
+    .tabHighlightedText{
+        margin-left: 16px;
+    }
+
+    .tabLine{
+      display: none;
+    }
+    
+    .line{
+       display: none;
+    
+    }
+
+    .tabCard_Content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .tabCard_ContentBox{
+        width: 100%;
+        @include general.bodyDefaultRegular;
+}
+
+.tabContentRow{
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 16px;
+}
+
+.tabsContainer{
+    margin-top: general.$large-space;
+    width: general.$innerDesktop;
+  align-items: center;
+    flex-direction: column;
+
+}
+
+.tabHighlightedText{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.listRow{
+    display: flex;
+    flex-direction: column;
+   // padding-left: 16px;
+   
+}
+
+.tabDevToolsImage{
+    width:340px;
+    height:169px ;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/tabcards/dev-tools-t.png');
+    margin-left: 16px;
+margin-right: 16px;
+margin-top: 16px;
+}
+
+.accoladesList{
+    width:350px;
+    margin-left: 32px;
+    display: flex;
+}
+
+.exampleBox{
+    width: 482px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+}
+
+@media (max-width:general.$mobile) {
+ 
+
+
+    .tabsNavigation{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .tabRow{
+        width: 300;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       margin-bottom: general.$medium-space;
+   }
+
+   .referenceBox{
+    padding-left: 8px;
+}
+
+
+   .tabDesignToolsImage{
+    width:230px;
+    height:85px ;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/tabcards/design-t-m.png');
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.tabDevToolsImage{
+    width:340px;
+    height:169px ;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/tabcards/dev-tools-m.png');
+    margin-left: 16px;
+margin-right: 8px;
+margin-top: 8px;
+}
+
+.exampleBox{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+    .tabCard{
+        flex-direction: column;
+        height: fit-content;
+        width: 300px;
+        margin-bottom: general.$default-space;
+        padding-bottom: general.$default-space;
+
+    }
+
+    .tabHighlightedText{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .tabLine{
+      display: none;
+    }
+    
+    .line{
+       display: none;
+    
+    }
+
+    .tabCard_Content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .listRow{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tabCard_ContentBox{
+        width: 100%;
+        @include general.bodyDefaultRegular;
+}
+
+.tabContentRow{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.tabCard_Summary{
+    width: 250px;
+    padding-right: 16px;
+   
+
+}
+
+.accoladesList{
+    width:250px;
+    margin-left: 32px;
+    display: flex;
+}
+
+}
